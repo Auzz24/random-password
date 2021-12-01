@@ -1,30 +1,66 @@
-var passwordLength= window.prompt("How many total charachters do you want in your password?");
-console.log(passwordLength);
-if (passwordLength < 8 || passwordLength > 128); {
-  window.alert("Please select a number between 8-128 charachters.");
-};
-
-var passwordCapital= window.confirm("Do you want to add a capital letter?");
-console.log(passwordCapital);
-
-var passwordLowercase= window.confirm("Do you want to add lowercase letters to your passsword?");
-console.log(passwordLowercase);
-
-var passwordNumber= window.confirm("Do you want to add a number into your passowrd?");
+var passwordNumber= window.prompt("How many total charachters do you want in your password?");
 console.log(passwordNumber);
+if (passwordNumber < 8 || passwordNumber > 128) {
+  window.alert("Please select a number between 8-128 charachters.");
+} //reload page???
 
-var passwordSpecial= window.confirm("Do you want to add a special charachter?");
-console.log(passwordSpecial);
+const charachters = "abcdefghijklmnopqrstuvwxyz"
 
-//length function 
-//var length = function (length) {
-  //if(passwordLength > 8 && passwordLength < 128){
-    //var promptNumber = window.confirm("Would you like to included numbers in your passowrd?");
-  //}
-  //else(passwordLength < 8 || passwordLength > 128); {
-    //var promtPasswordError = window.alert("Please pick a number between 8-128 charachters.")
-  //}
-//}; 
+function generateString(length){
+  let result = '';
+  const charachtersLength = charachters.length;
+  for (let i=0; i<length; i*passwordNumber){
+    result += charachters.charAt(math.floor(Math.random()* charachtersLength));
+  }
+
+  return result;
+
+}
+  
+  console.log(generateString(5));
+
+//else { 
+  //generate that many letters, label that var randomPassword
+  //(passwordLength * letter.random)
+//};
+
+//go onto passwordCapital 
+
+//var passwordCapital= window.confirm("Do you want to add a capital letter?");
+//console.log(passwordCapital);
+//if (){
+  //add a captial letter to the randomPassword varible; 
+//}
+//else(){
+//dont)
+ //}
+
+
+ // go to next question passwordNumber
+
+//var passwordNumber= window.confirm("Do you want to add a number into your passowrd?");
+//console.log(passwordNumber);
+//if (){
+  //add a captial letter to the randomPassword varible; 
+//}
+//else(){
+//dont)
+// }
+
+
+// go to passwordSpecial
+
+//var passwordSpecial= window.confirm("Do you want to add a special charachter?");
+//console.log(passwordSpecial);
+//if (){
+  //add a captial letter to the randomPassword varible; 
+//}
+//else(){
+//dont)
+// }
+
+
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -48,6 +84,16 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
+
+//length function 
+//var length = function (length) {
+  //if(passwordLength > 8 && passwordLength < 128){
+    //var promptNumber = window.confirm("Would you like to included numbers in your passowrd?");
+  //}
+  //else(passwordLength < 8 || passwordLength > 128); {
+    //var promtPasswordError = window.alert("Please pick a number between 8-128 charachters.")
+  //}
+//}; 
 
 //function start(){
   //window.confirm("Do you want to create a password?");
