@@ -1,28 +1,42 @@
+
 var passwordNumber= window.prompt("How many total charachters do you want in your password?");
-console.log(passwordNumber);
+//console.log(passwordNumber);
 if (passwordNumber < 8 || passwordNumber > 128) {
   window.alert("Please select a number between 8-128 charachters.");
 } //reload page???
+else { 
+const characters ='abcdefghijklmnopqrstuvwxyz';
 
-const charachters = "abcdefghijklmnopqrstuvwxyz"
+function generateString(length) {
+    let result = ' ';
+    const charactersLength = characters.length;
+    for ( let i = 0; i < length; i++ ) {
+        result += characters.charAt(Math.floor(Math.random() * charactersLength));
+    }
 
-function generateString(length){
-  let result = '';
-  const charachtersLength = charachters.length;
-  for (let i=0; i<length; i*passwordNumber){
-    result += charachters.charAt(math.floor(Math.random()* charachtersLength));
+    return result;
   }
+};
 
-  return result;
-
-}
-  
-  console.log(generateString(5));
-
-//else { 
-  //generate that many letters, label that var randomPassword
-  //(passwordLength * letter.random)
+console.log(generateString(passwordNumber));
 //};
+
+
+//const charachters = "abcdefghijklmnopqrstuvwxyz"
+
+//function generateString(length){
+  //let result = '';
+  //const charachtersLength = charachters.length;
+  //for (let i=0; i<length; i*passwordNumber){
+ //   //result += charachters.charAt(math.floor(Math.random()* charachtersLength));
+  //}
+
+  //return result;
+
+//}
+  
+  //console.log(generateString(5));
+
 
 //go onto passwordCapital 
 
@@ -151,4 +165,4 @@ generateBtn.addEventListener("click", writePassword);
 
 
 
-//special charachter function 
+//special charachter function
