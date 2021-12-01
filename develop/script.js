@@ -1,21 +1,30 @@
-// Assignment code here
+var passwordLength= window.prompt("How many total charachters do you want in your password?");
+console.log(passwordLength);
+if (passwordLength < 8 || passwordLength > 128); {
+  window.alert("Please select a number between 8-128 charachters.");
+};
 
-//how long do you want password 
-var passwordLength= window.prompt("How many charachters in length do you want your password?")
+var passwordCapital= window.confirm("Do you want to add a capital letter?");
+console.log(passwordCapital);
+
+var passwordLowercase= window.confirm("Do you want to add lowercase letters to your passsword?");
+console.log(passwordLowercase);
+
+var passwordNumber= window.confirm("Do you want to add a number into your passowrd?");
+console.log(passwordNumber);
+
+var passwordSpecial= window.confirm("Do you want to add a special charachter?");
+console.log(passwordSpecial);
+
 //length function 
-var length = function (length) {
-  if(passwordLength > 8 && passwordLength < 128){
-    var promptNumber = window.prompt("Would you like to included a number in your passowrd?")
-  }
-  else(passwordLength < 8 || passwordLength > 128); {
-    var promtPasswordError = window.prompt("Please pick a number between 8-128 charachters.")
-  }
-}
-//if less than 8 display password length message 
-
-//if more than 128 display password message
-
-//if between 8-128 ask new question 
+//var length = function (length) {
+  //if(passwordLength > 8 && passwordLength < 128){
+    //var promptNumber = window.confirm("Would you like to included numbers in your passowrd?");
+  //}
+  //else(passwordLength < 8 || passwordLength > 128); {
+    //var promtPasswordError = window.alert("Please pick a number between 8-128 charachters.")
+  //}
+//}; 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -32,4 +41,68 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-length()
+
+//length()
+
+
+
+
+
+
+//function start(){
+  //window.confirm("Do you want to create a password?");
+//}
+
+//If yes send to this prompt 
+//
+//length function 
+//var length = function (length) {
+  //if(passwordLength > 8 && passwordLength < 128){
+    //var promptNumber = window.confirm("Would you like to included numbers in your passowrd?");
+  //}
+  //else(passwordLength < 8 || passwordLength > 128); {
+    //var promtPasswordError = window.alert("Please pick a number between 8-128 charachters.")
+  //}
+//}; 
+
+//if no
+//console.alert("Thank you, goodbye")
+
+
+
+
+
+//start()
+
+
+
+
+
+
+
+// Assignment code here
+
+
+
+
+//colsole logs 
+
+//how long do you want password 
+
+
+
+//add capital letter or not
+//var numbers = passwordLength
+ //if(
+ //var promtCapital = window.confirm ("Would you like to add a capital letter?")
+
+
+//var promptNumber= function (number){
+
+
+//number function 
+
+
+
+
+//special charachter function 
