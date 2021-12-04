@@ -1,13 +1,13 @@
 # Password Generator 
 
-##Purpose 
+## Purpose 
 Generate a random password for the user 
 
-###Built with 
+### Built with 
 Html and JavaScript
 
-####Website 
+#### Website 
 https://auzz24.github.io/random-password/
 
-#####Contribution 
+##### Contribution 
 Made by Austin Miller 
