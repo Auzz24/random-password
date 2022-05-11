@@ -1,7 +1,7 @@
 # Password Generator 
 
 ## Purpose 
-This application generate a random password for the user using HTML, CSS, and but mainly, JavaScript. 
+This application generates a random password for the user using HTML, CSS, and but mainly, JavaScript. 
 
 ### Built with 
 *Html 
