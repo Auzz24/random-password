@@ -1,10 +1,12 @@
 # Password Generator 
 
 ## Purpose 
-Generate a random password for the user 
+This application generate a random password for the user using HTML, CSS, and but mainly, JavaScript. 
 
 ### Built with 
-Html and JavaScript
+*Html 
+*CSS 
+*JavaScript
 
 #### Website 
 https://auzz24.github.io/random-password/
